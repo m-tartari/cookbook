@@ -19,10 +19,11 @@
 - vino bianco
 - passata di pomodoro
 - prezzemolo (facoltativo)
-- olio d'oliva 
+- olio d'oliva
 
 ### Preparazione
+
 #. Tritare lacipolla e metterla a rosolare nell'olio d'oliva.
-#. aggiungere il tonno e lasciare soffriggere qualche minuto e bagnare con un po' di vino bianco. 
-#. Lasciar evaporare il vino ed aggiungere la passata di pomodoro con un po' di acqua. 
-#. Aggiustare di sale e lasciar cuocere circa 20 minuti. 
+#. aggiungere il tonno e lasciare soffriggere qualche minuto e bagnare con un po' di vino bianco.
+#. Lasciar evaporare il vino ed aggiungere la passata di pomodoro con un po' di acqua.
+#. Aggiustare di sale e lasciar cuocere circa 20 minuti.

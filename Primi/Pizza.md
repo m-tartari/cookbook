@@ -1,7 +1,7 @@
 ## Pizza
 
 \rcClockSymbol{} Tempo di preparazione
-: 10--15 minuti 
+: 10--15 minuti
 
 \rcClockSymbol{} Lievitazione
 : 2 ore circa

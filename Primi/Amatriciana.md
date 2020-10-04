@@ -11,16 +11,15 @@
 
 ### Ingredienti
 
-- olio d'oliva extravergine 
--  1 cipolla piccola
-- 150 gr pancetta affumicata 
+- olio d'oliva extravergine
+- 1 cipolla piccola
+- 150 gr pancetta affumicata
 - 150 gr pancetta dolce
 - 2 barattoli passata di pomodoro piccoli
 - pecorino romano stagionato o parmigiano reggiano o grana padano
 
-
-
 ### Preparazione
+
 #. Tritare la cipolla fine
 #. Farla rosolare nell'olio d'olio d'oliva insieme alla pancetta tagliata a dadini
 #. Quando è dorata aggiungere il pomodoro e diluire il tutto con mezzo barattolo (della passata) di acqua

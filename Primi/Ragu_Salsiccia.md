@@ -16,11 +16,12 @@
 
 - 500 gr salsiccia meglio se all'aglio
 - 1/2 cipolla
-- 1 barattolo piccolo di passata di pomodoro 
-- olio d'oliva 
+- 1 barattolo piccolo di passata di pomodoro
+- olio d'oliva
 - 1 bicchiere piccolo di vino rosso
 
 ### Preparazione
+
 #. Tritare bene la cipolla e metterla a soffriggere nell'olio.
 #. Aggiungere la salsiccia e sgranarla bene. Rilascerà del liquido, proseguire la cottura mescolando e sgranandorla fino a quando il liquido non sarà evaporato e si sentirà che la carne sfriggiola. 
 #. Bagnare con il vino e lasciarlo evaporare bene.
