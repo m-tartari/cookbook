@@ -1,0 +1,99 @@
+\RequirePackage{fontspec}
+\setsansfont[Ligatures=TeX]{Anaktoria}
+\setmainfont[Ligatures=TeX,Numbers=OldStyle]{Charis SIL}
+\setmonofont[Scale=0.92]{Fantasque Sans Mono}
+
+% \definecolor{OverleafGreen}{HTML}{4F9C45}
+% \definecolor{LightGreen}{HTML}{79BE72}
+% \definecolor{DarkGreen}{HTML}{135A0B}
+
+%% Colour palette from http://www.colourlovers.com/palette/3579239/Vintage_Train
+\definecolor{VintageGreen}{HTML}{95A382}
+\definecolor{ChimneySmoke}{HTML}{C2CCB0}
+\definecolor{Blondie}{HTML}{D6B878}
+
+% \colorlet{recipe-accent-1}{OverleafGreen}
+% \colorlet{recipe-accent-2}{LightGreen}
+% \colorlet{recipe-accent-3}{DarkGreen}
+
+\colorlet{recipe-accent-1}{ChimneySmoke}
+\colorlet{recipe-accent-2}{Blondie}
+\colorlet{recipe-accent-3}{VintageGreen}
+
+\RequirePackage{pgfornament}
+\renewcommand{\rcAuthorSymbol}{\pgfornament[width=1.5em,ydelta=-0.5em,color=recipe-accent-2]{120}}
+\renewcommand{\rcClockSymbol}{\pgfornament[width=1.5em,ydelta=-0.5em,color=recipe-accent-2]{126}}
+\renewcommand{\rcServingSymbol}{\pgfornament[width=1.5em,ydelta=-0.5em,color=recipe-accent-2]{166}}
+\newcommand{\difficile}{\pgfornament[scale=.66]{130}}
+
+\setlist*[itemize]{label={\pgfornament[height=1em,ydelta=-0.25em]{12}},font={\color{recipe-accent-2}}}
+\setlist*[enumerate]{font=\color{recipe-accent-2}}
+\setlist*[description]{font=\color{recipe-accent-3},leftmargin=3em}
+
+\titleformat{\subsection}{\centering\color{recipe-accent-3}\sffamily\LARGE}{\thesubsection}{0pt}{}[\vskip-0.5\baselineskip{\pgfornament[color=recipe-accent-1]{88}}]
+
+\renewcommand{\maketitle}{
+{\color{recipe-accent-3}\centering\Huge\sffamily\@title\par}
+\bigskip
+{\centering\pgfornament[color=recipe-accent-1]{88}\par}
+\vfill
+
+% \begin{tikzpicture}
+% 	\rput(0,0){\pgfornament[color=recipe-accent-2,symmetry=h,scale=.5]{85}}\\
+% 	\rput[r](-3pt,3pt){\pgfornament[color=recipe-accent-2,symmetry=h,scale=.35]{72}}
+% 	{\Large\sffamily\@author\par}
+% 	\rput[l](3pt,3pt){\pgfornament[color=recipe-accent-2,symmetry=h,scale=.35]{73}}
+% \end{tikzpicture}
+
+{\centering\pgfornament[width=0.5*\linewidth,color=recipe-accent-2,symmetry=h]{75}\par}
+{\centering\Large\sffamily\@author\par}
+{\centering\large\sffamily\@date\par}
+\thispagestyle{empty}
+\setcounter{page}{0}
+}
+
+\RequirePackage{etoolbox}
+\AtBeginEnvironment{quotation}{\pgfornament[width=3.5em,color=recipe-accent-2]{37}\par\vspace*{-2.5\baselineskip}\itshape}
+
+%%
+%%	Custom settings
+%%
+\usepackage[hidelinks]{hyperref}
+
+
+\newcommand{\Sezione}[1]{
+\addcontentsline{toc}{section}{#1}
+\begin{tikzpicture}[color=recipe-accent-1,
+		transform shape,
+		every node/.style={inner sep=0pt}]
+	\node[minimum size=\linewidth](vecbox){};
+
+	\node[inner sep=6pt,color=recipe-accent-3] (text) at (vecbox.center){\Huge #1};
+	\node[anchor=north] at (text.south){%
+	\pgfornament[width=0.5*\linewidth]{75}};
+	\node[anchor=south] at (text.north){%
+	\pgfornament[width=0.5*\linewidth,symmetry=h]{75}};
+\end{tikzpicture}
+\thispagestyle{empty}
+\clearpage
+}
+
+\newcommand{\Ricetta}[1]{
+\markdownInput{#1}
+\clearpage
+}
+
+
+%% customize table of contents
+\usepackage{tocloft}
+\renewcommand\contentsname{
+{\color{recipe-accent-3}\centering\LARGE\sffamily Indice\par}
+\bigskip
+{\centering\pgfornament[color=recipe-accent-1]{88}\par}
+}
+
+\renewcommand{\cftsecfont}{\large\color{recipe-accent-3}\sffamily}
+\renewcommand{\cftsecpagefont}{\color{recipe-accent-3}\sffamily}
+\renewcommand{\cftsubsecfont}{\sffamily}
+\renewcommand{\cftsubsecpagefont}{\sffamily}
+\renewcommand{\cftdot}{}
